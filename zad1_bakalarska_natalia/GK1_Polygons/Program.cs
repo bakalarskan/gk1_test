@@ -1,8 +1,8 @@
 using System;
 using System.Windows.Forms;
-using PolygonEditor.UI;
+using PolygonEditor.UI; // lub GK1_Polygons.UI – zale¿nie od u¿ytego namespace
 
-namespace PolygonEditor
+namespace GK1_Polygons
 {
     internal static class Program
     {
@@ -10,7 +10,7 @@ namespace PolygonEditor
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Application.Run(new MainForm());
+            Application.Run(new MainForm()); // lub new Main_form(), jeœli zmieni³aœ nazwê klasy
         }
     }
 }
